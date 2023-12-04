@@ -1,1 +1,10 @@
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+
+   .navbar-collapse {
+      .navbar-nav {
+         a {
+            margin: 0 8px;
+         }
+      }
+   }
+}

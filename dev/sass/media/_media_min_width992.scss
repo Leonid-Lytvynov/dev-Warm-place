@@ -1,1 +1,13 @@
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+   header {
+      .burger-menu {
+         display: none;
+      }
+
+      .navbar-collapse {
+         .nav-button {
+            margin-right: 16px;
+         }
+      }
+   }
+}

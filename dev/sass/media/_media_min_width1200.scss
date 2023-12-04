@@ -1,1 +1,9 @@
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+   .navbar-collapse {
+      .navbar-nav {
+         a:first-child {
+            margin-right: 74px;
+         }
+      }
+   }
+}
