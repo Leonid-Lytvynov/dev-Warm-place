@@ -14,16 +14,20 @@
 
          .header-logo {
             max-height: 100px;
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
 
             img {
+               margin-right: 30px;
                height: 100px;
             }
          }
 
          .burger-menu {
-            position: absolute;
-            left: 0;
-            top: 27px;
+            margin-left: -8px;
+            max-width: 45px;
+            max-height: 45px;
 
             .burger-icon.is-active {
                width: 30px;
@@ -66,14 +70,57 @@
             .navbar-nav {
                flex-direction: column;
                margin-bottom: 10px;
+               width: 100%;
 
                a {
                   margin: 10px 8px;
+                  width: 100%;
                }
             }
 
             .nav-button {
                margin-bottom: 20px;
+            }
+         }
+      }
+   }
+
+   .first-screen {
+      padding: 198px 0 75px;
+      height: calc(100vh - 100px);
+
+      .first-screen-title {
+         font-size: 30px;
+         margin-bottom: 87px;
+         line-height: 43px;
+      }
+
+      .first-screen-btn {
+         padding: 17px 51px;
+         font-size: 14px;
+      }
+
+      .link-list {
+         margin-bottom: 30px;
+
+         li {
+            margin: 0 20px;
+
+            .list-item {
+               font-size: 12px;
+               padding: 0 12px;
+
+               &::before {
+                  height: 14px;
+                  bottom: 0px;
+                  left: -20px;
+               }
+
+               &::after {
+                  height: 14px;
+                  bottom: 0px;
+                  right: -21px;
+               }
             }
          }
       }

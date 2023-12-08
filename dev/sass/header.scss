@@ -67,26 +67,30 @@ header {
          margin: 0 30px;
          text-align: center;
 
-         &:hover {
-            color: #89C249;
+         &:hover{
+            color: #89c249;
+         }
+      }
+       
+      .nav-home {
+         font-weight: 600;
+         position: relative;
+
+         &::after {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 2px;
+            border-radius: 60px;
+            background: #FFF;
+            position: absolute;
+            bottom: -0px;
+            left: 50%;
+            transform: translate(-50%, 0);
          }
 
-         span {
-            font-weight: 600;
-            position: relative;
-
-            &::after {
-               content: "";
-               display: inline-block;
-               width: 15px;
-               height: 2px;
-               border-radius: 60px;
-               background: #FFF;
-               position: absolute;
-               bottom: -12px;
-               left: 50%;
-               transform: translate(-50%, 0);
-            }
+         &:hover::after{
+            background-color: #89c249;
          }
       }
    }
@@ -99,5 +103,10 @@ header {
       border-radius: 27px;
       border: 1px solid #FCB357;
       text-align: center;
+
+      &:hover{
+         border-color: #89C249;
+         color: #89C249;
+      }
    }
 }
